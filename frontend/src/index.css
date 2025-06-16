@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes loading-bar {
+  0% { left: -40%; }
+  100% { left: 100%; }
+}
+
+.animate-loading-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -40%;
+  width: 40%;
+  background: linear-gradient(to right, #6366F1, #8B5CF6, #EC4899);
+  animation: loading-bar 1.5s infinite;
+}
